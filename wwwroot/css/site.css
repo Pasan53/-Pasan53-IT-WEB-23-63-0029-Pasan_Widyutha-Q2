@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+.bdy_one p {
+    font-size: 25px;
+}
+
+.bdy_main {
+    background-image: url('https://dgfvbadct9fz8.cloudfront.net/uploads/2024/02/infographic-01-1500x770.jpg');
+    height: 600px;
+    color: yellow;
+}
+
+.bdy_cards {
+    height: 400px;
+}
+
+.card-left {
+    margin-right: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    margin: 10px;
+    background-color: yellow;
+}
+
+

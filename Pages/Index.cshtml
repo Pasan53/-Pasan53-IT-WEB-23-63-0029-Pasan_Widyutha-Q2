@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="bdy_main ">
+    <div class="text-center bdy_one ">
+        <h1 class="display-4">Welcome to the Student Management Portal</h1>
+        <p>Manage all the Courses and Students with ease</p>
+    </div>
+
+    @* using bootstrap cards to navigate to relavant pages *@
+    <div class="bdy_cards container d-flex justify-content-center align-items-end">
+        <div class="row">
+
+            <div class="card card-left col-md-6" style="width: 18rem;">
+                <a href="/Students/Index">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Info</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Manage Students here</h6>
+                        <p class="card-text">Click here to Add new Students, View, Edit, Delete Existing Students</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card card-left col-md-6" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="/Courses/Index">
+                        <h5 class="card-title">Course Info</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Manage Courses here</h6>
+                        <p class="card-text">Click here to Add new Courses, Edit, Delete Existing Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-6" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="/StudentDetails">
+                        <h5 class="card-title">Student Information</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">View all Information here</h6>
+                        <p class="card-text">Click here to View all Information here of Students and their Courses</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,36 @@
+﻿@page
+@model SLIIT_Student_Management_System_P.Pages.StudentDetailsModel
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h1>Student Information Page</h1> @* title heading for Student Details page *@
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Course Name</th>
+            <th>Lecturer Name</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @* using foreach to desplay all student details and its coresponding course name *@
+
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.StudentId</td>
+                <td>@student.Name</td>
+                <td>@student.City</td>
+                <td>@(student.Course != null ? student.Course.Name : "N/A")</td>
+                <td>@(student.Course != null ? student.Course.Lecturer_Name : "N/A")</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
