@@ -1,4 +1,4 @@
-Creating a simple  system to manage students' information using ASP.NET and MS SQL Database.
+This is a simple  system to manage students' information using ASP.NET and MS SQL Database.
 
 
   
